@@ -25,7 +25,7 @@
                         <a href="" class="logo link"><span class="logo-accent">Web</span>Studio</a>
                         <ul class="site-menu list">
                             <li class="menu-item">
-                                <a class="menu-link link" href="./index.html">Studio</a>
+                                <a class="menu-link  current-page link" href="./index.html">Studio</a>
                             </li>
                             <li class="menu-item">
                                 <a class="menu-link link" href="./portfolio.html">Portfolio</a>
@@ -50,14 +50,14 @@
             <!--hero block-->
             <section class="hero-section">
                 <h1 class="hero">Effective Solutions for Your Business</h1>
-                <button class=" main-button" type="button" data-modal-open>Order Service</button>
+                <button class="main-button" type="button" data-modal-open >Order Service</button>
             </section>
             <!--fitures-->
             <section class="fiture-section">
                 <div class="container">
                     <ul class="fiture-list list">
                         <li class="fiture-item ">
-                        <div class="fiture-icon-list">
+                            <div class="fiture-icon-list">
                                 <svg class="fiture-icon">
                                     <use href="./images/icons.svg#antenna"></use>
                                 </svg>
@@ -69,7 +69,7 @@
                                 and creative solution. </p>
                         </li>
                         <li class="fiture-item">
-                           <div class="fiture-icon-list">
+                            <div class="fiture-icon-list">
                                 <svg class="fiture-icon">
                                     <use href="./images/icons.svg#clock"></use>
                                 </svg>
@@ -393,15 +393,16 @@
                 </div>
             </div>
         </footer>
-<div class="backdrop is-hidden" data-moda>
-    <div class="modal-window">
-        <button type="button" class="modal-close-button" data-modal-close>
-            <svg class="modal-button-icon">
-                <use href="./images/icons.svg#icon-close-btn" width="8" height="8"  ></use>
-            </svg> 
-        </button>
-    </div>
-</div>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal-window">
+                <button type="button" class="modal-close-button" data-modal-close>
+                    <svg class="modal-button-icon">
+                        <use href="./images/icons.svg#icon-close-btn" width="8" height="8"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 
 </html>
