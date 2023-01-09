@@ -178,7 +178,7 @@ Img {
 }
 
 .hero {
-    max-width: 494px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
     font-size: 56px;
@@ -237,7 +237,7 @@ body {
 .main-button:focus {
     background: var(--btn-hover-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -258,7 +258,9 @@ body {
     border-radius: 4px;
     border: 1px solid transparent;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),  
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    
 }
 
 
@@ -268,10 +270,12 @@ body {
     color: var(--main-background-color);
     background: var(--accent-color);
     border: 1px solid var(--accent-color);
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 1px 6px rgba(46, 47, 66, 0.08);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 3px 1px rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .button-list {
@@ -372,6 +376,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 24px;
+   
 }
 
 
@@ -413,7 +418,6 @@ body {
 .image-link {
     display: block;
     color: var(--primary-color);
-
 }
 
 
@@ -449,6 +453,7 @@ body {
     border-right: 1px solid var(--footer-text-color);
     border-bottom: 1px solid var(--footer-text-color);
     border-left: 1px solid var(--footer-text-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /*-------------------- PORTFPLIO OVERLAY---------------------*/
@@ -476,6 +481,7 @@ body {
     padding-top: 40px;
     padding-left: 32px;
     padding-right: 32px;
+
     background-color: rgba(77, 90, 229, 0.9);
 }
 
@@ -509,11 +515,13 @@ body {
 
 .subtitles {
     margin-top: 8px;
+    margin-bottom: 8px;
 
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: var(--main-letter-spacing);
+
     color: var(--secondary-color-text);
 }
 
@@ -544,7 +552,9 @@ body {
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: 4px;
+
     fill: #8E8F99;
+
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -578,14 +588,14 @@ body {
 }
 
 .footer-logo {
-    color: var(--secondary-background-color);
-
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+     color: var(--secondary-background-color);
 }
 
 .footer-accent {
@@ -596,11 +606,11 @@ body {
     margin-top: 16px;
     width: 264px;
 
-    color: var(--footer-text-color);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: var(--main-letter-spacing);
+    color: var(--footer-text-color);
 }
 
 
@@ -620,6 +630,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+
     color: var(--main-background-color);
 }
 
@@ -629,9 +640,11 @@ body {
     height: 40px;
     justify-content: center;
     align-items: center;
+
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--secondary-background-color);
     border-radius: 50%;
+
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
@@ -696,6 +709,7 @@ body {
     align-items: center;
     width: 24px;
     height: 24px;
+    
     border-radius: 50%;
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
